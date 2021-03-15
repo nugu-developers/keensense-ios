@@ -1,0 +1,15 @@
+framework module KeenSense {
+    umbrella header "KeenSense.h"
+    export *
+    module * { export * }
+    
+    explicit module LibOpus {
+        header "debugLog.h"
+        header "libdefines.h"
+        header "libexports.h"
+        header "libtypes.h"
+        header "libWakeupApi.h"
+        link "KeenSense"
+        export *
+    }
+}
